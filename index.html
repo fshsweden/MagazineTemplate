@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Daily News WordPress ThemeHome | Just another CodexCoder Demos site</title> 
+
+	<link rel="stylesheet" type="text/css" href="http://demos.codexcoder.com/themes/dailynews/wp-content/themes/dailynews/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http://demos.codexcoder.com/themes/dailynews/wp-content/themes/dailynews/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="http://demos.codexcoder.com/themes/dailynews/wp-content/themes/dailynews/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="http://demos.codexcoder.com/themes/dailynews/wp-content/themes/dailynews/css/style.css">
+
+	<link rel="shortcut icon" href="http://demos.codexcoder.com/themes/dailynews/wp-content/themes/dailynews/favicon.png" >
+	<script type="text/javascript">
+		<!--
+
+		function init ( )
+		{
+			timeDisplay = document.createTextNode ( "" );
+			document.getElementById("clock").appendChild ( timeDisplay );
+		}
+
+		function updateClock ( )
+		{
+			var currentTime = new Date ( );
+
+			var currentHours = currentTime.getHours ( );
+			var currentMinutes = currentTime.getMinutes ( );
+			var currentSeconds = currentTime.getSeconds ( );
+
+	// Pad the minutes and seconds with leading zeros, if required
+	currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+	currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+
+	// Choose either "AM" or "PM" as appropriate
+	var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+
+	// Convert the hours component to 12-hour format if needed
+	currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+
+	// Convert an hours component of "0" to "12"
+	currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+
+	// Compose the string for display
+	var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+
+	// Update the time display
+	document.getElementById("clock").firstChild.nodeValue = currentTimeString;
+}
+
+// -->
+</script>
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Daily News WordPress Theme &raquo; Feed" href="http://demos.codexcoder.com/themes/dailynews/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Daily News WordPress Theme &raquo; Comments Feed" href="http://demos.codexcoder.com/themes/dailynews/comments/feed/" />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://demos.codexcoder.com/themes/dailynews/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.0.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://demos.codexcoder.com/themes/dailynews/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://demos.codexcoder.com/themes/dailynews/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://demos.codexcoder.com/themes/dailynews/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://demos.codexcoder.com/themes/dailynews/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.0.18" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+</head>
+
+<body class="home blog" onload="updateClock(); setInterval('updateClock()', 1000 )">
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<header id="ccr-header">
+		<section id="ccr-nav-top" class="fullwidth">
+			<div class="">
+				<div class="container">
+					<nav class="top-menu">
+
+						<div class="menu-bottom-menu-container"><ul class="left-top-menu"><li id="menu-item-1699" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1699"><a href="http://demos.codexcoder.com/themes/dailynews/sample-page/">Sports</a></li>
+							<li id="menu-item-1700" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1700"><a href="http://demos.codexcoder.com/themes/dailynews/page-b/">Technoloogy</a></li>
+							<li id="menu-item-1701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1701"><a href="http://demos.codexcoder.com/themes/dailynews/page-a/">Page A</a></li>
+							<li id="menu-item-1702" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1702"><a href="http://demos.codexcoder.com/themes/dailynews/blog/">Blog</a></li>
+							<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="http://demos.codexcoder.com/themes/dailynews/front-page/">Front Page</a></li>
+						</ul></div><div class="menu-bottom-menu-container"><ul class="right-top-menu pull-right"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1699"><a href="http://demos.codexcoder.com/themes/dailynews/sample-page/">Sports</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1700"><a href="http://demos.codexcoder.com/themes/dailynews/page-b/">Technoloogy</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1701"><a href="http://demos.codexcoder.com/themes/dailynews/page-a/">Page A</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1702"><a href="http://demos.codexcoder.com/themes/dailynews/blog/">Blog</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="http://demos.codexcoder.com/themes/dailynews/front-page/">Front Page</a></li>
+						</ul></div>
+					</nav> <!-- /.top-menu -->
+				</div>
+			</div>	
+		</section> <!--  /#ccr-nav-top  -->
+
+
+
+		<section id="ccr-site-title">
+			<div class="container">
+				<div class="site-logo col-sm-4">
+
+
+					<h1 ><a class="logo" href="http://demos.codexcoder.com/themes/dailynews">Daily News WordPress Theme</a></h1>
+					<div class="description">Just another CodexCoder Demos site</div> 
+
+				</div> <!-- / .navbar-header -->
+
+
+				<div class="add-space col-sm-8">
+					728 x 90 px Banner
+				</div> <!-- / .adspace -->
+
+
+			</div>	<!-- /.container -->
+		</section> <!-- / #ccr-site-title -->
+
+
+
+		<section id="ccr-nav-main">
+			<nav class="main-menu">
+				<div class="container">
+
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ccr-nav-main">
+							<i class="fa fa-bars"></i>
+						</button> <!-- /.navbar-toggle -->
+					</div> <!-- / .navbar-header -->
+
+					<nav class="collapse navbar-collapse ccr-nav-main" role="navigation">
+						<ul id="menu-all-pages" class="nav navbar-nav"><li id="menu-item-1636" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1636"><a href="http://codexcoder.com/demos/wordpress/themes/dailynews/">Home</a></li>
+							<li id="menu-item-1637" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1637"><a href="http://demos.codexcoder.com/themes/dailynews/blog/">Blog</a></li>
+							<li id="menu-item-1638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1638"><a href="http://demos.codexcoder.com/themes/dailynews/front-page/">Front Page</a></li>
+							<li id="menu-item-1639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1639"><a href="http://demos.codexcoder.com/themes/dailynews/about/" class="dropdown-toggle" data-toggle="dropdown">About The Tests <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li id="menu-item-1692" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1692"><a href="http://demos.codexcoder.com/themes/dailynews/about/page-image-alignment/">Page Image Alignment</a></li>
+									<li id="menu-item-1693" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1693"><a href="http://demos.codexcoder.com/themes/dailynews/about/page-markup-and-formatting/">Page Markup And Formatting</a></li>
+									<li id="menu-item-1640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1640"><a href="http://demos.codexcoder.com/themes/dailynews/about/clearing-floats/">Clearing Floats</a></li>
+									<li id="menu-item-1641" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1641"><a href="http://demos.codexcoder.com/themes/dailynews/about/page-with-comments/">Page with comments</a></li>
+									<li id="menu-item-1642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1642"><a href="http://demos.codexcoder.com/themes/dailynews/about/page-with-comments-disabled/">Page with comments disabled</a></li>
+								</ul>
+							</li>
+							<li id="menu-item-1643" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1643"><a href="http://demos.codexcoder.com/themes/dailynews/level-1/" class="dropdown-toggle" data-toggle="dropdown">Level 1 <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li id="menu-item-1644" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1644 dropdown-submenu"><a href="http://demos.codexcoder.com/themes/dailynews/level-1/level-2/" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+										<ul class="dropdown-menu">
+											<li id="menu-item-1645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1645"><a href="http://demos.codexcoder.com/themes/dailynews/level-1/level-2/level-3/">Level 3</a></li>
+											<li id="menu-item-1694" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1694"><a href="http://demos.codexcoder.com/themes/dailynews/level-1/level-2/level-3a/">Level 3a</a></li>
+											<li id="menu-item-1695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1695"><a href="http://demos.codexcoder.com/themes/dailynews/level-1/level-2/level-3b/">Level 3b</a></li>
+										</ul>
+									</li>
+									<li id="menu-item-1696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1696"><a href="http://demos.codexcoder.com/themes/dailynews/level-1/level-2a/">Level 2a</a></li>
+									<li id="menu-item-1697" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1697"><a href="http://demos.codexcoder.com/themes/dailynews/level-1/level-2b/">Level 2b</a></li>
+								</ul>
+							</li>
+							<li id="menu-item-1646" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1646"><a href="http://demos.codexcoder.com/themes/dailynews/lorem-ipsum/">Lorem Ipsum</a></li>
+							<li id="menu-item-1647" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1647"><a href="http://demos.codexcoder.com/themes/dailynews/page-a/">Page A</a></li>
+							<li id="menu-item-1698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1698"><a href="http://demos.codexcoder.com/themes/dailynews/page-b/">Page B</a></li>
+						</ul>						</nav><!-- /  .collapse .navbar-collapse  -->
+
+						<div id="currentTime" class="pull-right current-time">
+							<i class="fa fa-clock-o"></i> 
+							<span id="clock">&nbsp;</span>
+						</div><!-- / #currentTime -->
+
+					</div>	<!-- /.container -->
+				</nav> <!-- /.main-menu -->
+			</section> <!-- / #ccr-nav-main -->
+
+
+
+			<section id="ccr-nav-below-main">
+				<nav class="second-menu">
+					<div class="container">
+
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ccr-nav-below-main">
+								<i class="fa fa-bars"></i>
+							</button> <!-- /.navbar-toggle -->
+						</div> <!-- / .navbar-header -->
+
+						<div class="collapse navbar-collapse ccr-nav-below-main">
+
+							<div class="menu-bottom-menu-container"><ul class="nav navbar-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1699"><a href="http://demos.codexcoder.com/themes/dailynews/sample-page/">Sports</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1700"><a href="http://demos.codexcoder.com/themes/dailynews/page-b/">Technoloogy</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1701"><a href="http://demos.codexcoder.com/themes/dailynews/page-a/">Page A</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1702"><a href="http://demos.codexcoder.com/themes/dailynews/blog/">Blog</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="http://demos.codexcoder.com/themes/dailynews/front-page/">Front Page</a></li>
+							</ul></div>							<!-- /.nav /.navbar-nav -->
+						</div>
+
+						<div class="ccr-language">
+							<ul> 
+								<li>Language:</li>
+								<li><a href="#"><img src="http://demos.codexcoder.com/themes/dailynews/wp-content/themes/dailynews/img/uk.png" alt="UK">English</a></li>
+								<li><a href="#"><img src="http://demos.codexcoder.com/themes/dailynews/wp-content/themes/dailynews/img/france.png" alt="France">France</a></li><li>
+									<a href="#"><img src="http://demos.codexcoder.com/themes/dailynews/wp-content/themes/dailynews/img/garman.png" alt="Garman">Garman</a></li>
+								</ul>
+							</div> <!-- /.ccr-language -->
+						</div><!-- /.container -->
+					</nav><!-- /.second-menu -->
+				</section><!-- / #ccr-nav-below-main -->
+
+			</header> <!-- /#ccr-header -->
+
+
+			<section id="ccr-main-section">
+				<div class="container">
+
+					<section id="ccr-left-section" class="col-md-8">
+
+						<div class="ccr-last-update">
+							<div class="update-ribon">Latest Update</div> <!-- /.update-ribon -->
+							<span class="update-ribon-right"></span> <!-- /.update-ribon-left -->
+							<div class="update-news-text" id="update-news-text">
+								<ul id="latestUpdate" class="newsticker">
+									<li>
+										<a href="http://demos.codexcoder.com/themes/dailynews/2012/01/07/template-sticky/">Template: Sticky</a>
+									</li>
+									<li>
+										<a href="http://demos.codexcoder.com/themes/dailynews/2014/04/30/consectetur-adipisicing-elit/">Consectetur adipisicing elit</a>
+									</li>
+									<li>
+										<a href="http://demos.codexcoder.com/themes/dailynews/2014/04/30/lorem-ipsum-dolor-sit-amet/">Lorem ipsum dolor sit amet</a>
+									</li>
+									<li>
+										<a href="http://demos.codexcoder.com/themes/dailynews/2014/04/29/hello-world/">Hello world!</a>
+									</li>
+									<li>
+										<a href="http://demos.codexcoder.com/themes/dailynews/2013/01/11/markup-html-tags-and-formatting/">Markup: HTML Tags and Formatting</a>
+									</li>
+									<li>
+										<a href="http://demos.codexcoder.com/themes/dailynews/2013/01/10/markup-image-alignment/">Markup: Image Alignment</a>
+									</li>
+									<li>
+										<a href="http://demos.codexcoder.com/themes/dailynews/2013/01/09/markup-text-alignment/">Markup: Text Alignment</a>
+									</li>
+									<li>
+										<a href="http://demos.codexcoder.com/themes/dailynews/2013/01/05/title-with-special-characters/">Markup: Title With Special Characters</a>
+									</li>
+									<li>
+										<a href="http://demos.codexcoder.com/themes/dailynews/2013/01/05/markup-title-with-markup/">Markup: Title With Markup</a>
+									</li>
+									<li>
+										<a href="http://demos.codexcoder.com/themes/dailynews/2012/03/15/template-featured-image-vertical/">Template: Featured Image (Vertical)</a>
+									</li>
+									<li>
+										<a href="http://demos.codexcoder.com/themes/dailynews/2012/03/15/template-featured-image-horizontal/">Template: Featured Image (Horizontal)</a>
+									</li>
+								</ul>
+							</div> <!-- /.update-text -->
+
+							<div class="update-right-border"></div> <!-- /.update-right-border -->
+						</div> <!-- / .ccr-last-update -->
+
+
+
+						<section id="ccr-slide-main" class="carousel slide" data-ride="carousel">				
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="container slide-element">
+										<img width="764" height="433" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2014/04/main-slide-4-764x433.jpg" class="attachment-slider wp-post-image" alt="main-slide-4" />								<h2><a href="http://demos.codexcoder.com/themes/dailynews/ccr_slider/featured-slider-example-4/">Featured Slider Example 4</a></h2>
+									</div> <!-- /.slide-element -->
+								</div> <!--/.active /.item -->
+
+								<div class="item ">
+									<div class="container slide-element">
+										<img width="764" height="433" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2014/04/main-slide-1-764x433.jpg" class="attachment-slider wp-post-image" alt="main-slide-1" />								<h2><a href="http://demos.codexcoder.com/themes/dailynews/ccr_slider/featured-slider-example-3/">Featured Slider Example 3</a></h2>
+									</div> <!-- /.slide-element -->
+								</div> <!--/.active /.item -->
+
+								<div class="item ">
+									<div class="container slide-element">
+										<img width="764" height="433" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2014/04/main-slide-3-764x433.jpg" class="attachment-slider wp-post-image" alt="main-slide-3" />								<h2><a href="http://demos.codexcoder.com/themes/dailynews/ccr_slider/featured-slider-example-1-2/">Featured Slider Example 1</a></h2>
+									</div> <!-- /.slide-element -->
+								</div> <!--/.active /.item -->
+
+							</div> <!-- /.carousel-inner -->
+
+							<!-- slider nav -->
+							<a class="carousel-control left" href="#ccr-slide-main" data-slide="prev"><i class="fa fa-arrow-left"></i></a>
+							<a class="carousel-control right" href="#ccr-slide-main" data-slide="next"><i class="fa fa-arrow-right"></i></a>
+
+							<ol class="carousel-indicators">
+								<li data-target="#ccr-slide-main" data-slide-to="0" class="active"></li>
+								<li data-target="#ccr-slide-main" data-slide-to="1" class=""></li>
+								<li data-target="#ccr-slide-main" data-slide-to="2" class=""></li>
+							</ol> <!-- /.carousel-indicators -->
+
+						</section><!-- /#ccr-slide-main -->
+
+
+
+
+						<section id="ccr-latest-post-gallery">
+							<div class="ccr-gallery-ttile">
+								<span></span> 
+								<p>Gallery</p>
+							</div><!-- .ccr-gallery-ttile -->
+
+
+							<ul class="ccr-latest-post">
+
+								<li>
+									<div class="ccr-thumbnail">
+										<img width="239" height="191" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2014/04/main-slide-41-239x191.jpg" class="attachment-gallery wp-post-image" alt="main-slide-4" />								<p><a href="http://demos.codexcoder.com/themes/dailynews/2014/04/29/hello-world/">Read More</a></p>
+									</div>
+									<h4><a href="http://demos.codexcoder.com/themes/dailynews/2014/04/29/hello-world/">Hello world!</a></h4>
+								</li>	   
+								<li>
+									<div class="ccr-thumbnail">
+										<img width="239" height="191" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2013/04/triforce-wallpaper-239x191.jpg" class="attachment-gallery wp-post-image" alt="It’s dangerous to go alone! Take this." />								<p><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/11/markup-html-tags-and-formatting/">Read More</a></p>
+									</div>
+									<h4><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/11/markup-html-tags-and-formatting/">Markup: HTML Tags and Formatting</a></h4>
+								</li>	   
+								<li>
+									<div class="ccr-thumbnail">
+										<img width="239" height="191" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2014/04/main-slide-3-239x191.jpg" class="attachment-gallery wp-post-image" alt="main-slide-3" />								<p><a href="http://demos.codexcoder.com/themes/dailynews/2012/03/15/template-featured-image-horizontal/">Read More</a></p>
+									</div>
+									<h4><a href="http://demos.codexcoder.com/themes/dailynews/2012/03/15/template-featured-image-horizontal/">Template: Featured Image (Horizontal)</a></h4>
+								</li>	   
+							</ul> <!-- /.ccr-latest-post -->
+
+						</section> <!--  /#ccr-latest-post-gallery  -->
+
+						<section class="bottom-border">
+						</section> <!-- /#bottom-border -->
+
+
+
+
+						<section id="ccr-world-news">
+							<div class="ccr-gallery-ttile">
+								<span></span> 
+								<p>World News</p>
+							</div> <!-- .ccr-gallery-ttile -->
+
+
+							<section class="featured-world-news">					  
+								<div class="featured-world-news-img">
+									<img width="371" height="252" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2012/06/dsc20040724_152504_532-371x252.jpg" class="attachment-sticky wp-post-image" alt="dsc20040724_152504_532" />							</div>	
+									<div class="featured-world-news-post">
+										<h5>Template: Sticky</h5>
+										<p><p>This is a sticky post. There are a few things to verify: The sticky post should be distinctly recognizable in some way in comparison to normal posts. You can style the .sticky class if you are using the post_class() function to generate your post classes, which is a best practice. They should show at the very top [&hellip;]</p>
+									</p>
+									<div class="like-comment-readmore">										
+										<a href="" class="comments"><i class="fa fa-comments-o"></i> 0</a>
+										<a class="read-more" href="http://demos.codexcoder.com/themes/dailynews/2012/01/07/template-sticky/">Read More</a>
+									</div> <!-- /.like-comment-readmore -->
+								</div>					
+							</section> <!-- /#featured-world-news -->
+
+
+
+							<ul>
+								<li>
+
+									<div class="ccr-thumbnail">
+										<img width="174" height="102" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2014/04/main-slide-3-174x102.jpg" class="attachment-post-thumbnail wp-post-image" alt="main-slide-3" />										<p><a href="http://demos.codexcoder.com/themes/dailynews/2014/04/30/lorem-ipsum-dolor-sit-amet/">Read More</a></p>
+									</div>
+									<h5><a href="http://demos.codexcoder.com/themes/dailynews/2014/04/30/lorem-ipsum-dolor-sit-amet/">Lorem ipsum dolor sit amet</a></h5>
+								</li>
+
+							</ul>
+
+
+							<ul>
+								<li>
+
+									<div class="ccr-thumbnail">
+										<img width="174" height="102" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2014/04/main-slide-41-174x102.jpg" class="attachment-post-thumbnail wp-post-image" alt="main-slide-4" />										<p><a href="http://demos.codexcoder.com/themes/dailynews/2014/04/29/hello-world/">Read More</a></p>
+									</div>
+									<h5><a href="http://demos.codexcoder.com/themes/dailynews/2014/04/29/hello-world/">Hello world!</a></h5>
+								</li>
+
+							</ul>
+
+
+							<ul>
+								<li>
+
+									<div class="ccr-thumbnail">
+										<img width="174" height="102" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2013/04/triforce-wallpaper-174x102.jpg" class="attachment-post-thumbnail wp-post-image" alt="It’s dangerous to go alone! Take this." />										<p><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/11/markup-html-tags-and-formatting/">Read More</a></p>
+									</div>
+									<h5><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/11/markup-html-tags-and-formatting/">Markup: HTML Tags and Formatting</a></h5>
+								</li>
+
+							</ul>
+
+
+							<ul>
+								<li>
+
+									<div class="ccr-thumbnail">
+										<img width="174" height="102" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2013/03/soworthloving-wallpaper-174x102.jpg" class="attachment-post-thumbnail wp-post-image" alt="I Am Worth Loving Wallpaper" />										<p><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/10/markup-image-alignment/">Read More</a></p>
+									</div>
+									<h5><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/10/markup-image-alignment/">Markup: Image Alignment</a></h5>
+								</li>
+
+							</ul>
+
+
+							<ul>
+								<li>
+
+									<div class="ccr-thumbnail">
+										<img width="174" height="102" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2011/01/dsc20050727_091048_222-174x102.jpg" class="attachment-post-thumbnail wp-post-image" alt="dsc20050727_091048_222" />										<p><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/09/markup-text-alignment/">Read More</a></p>
+									</div>
+									<h5><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/09/markup-text-alignment/">Markup: Text Alignment</a></h5>
+								</li>
+
+							</ul>
+
+
+							<ul>
+								<li>
+
+									<div class="ccr-thumbnail">
+										<img width="174" height="102" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2013/03/unicorn-wallpaper-174x102.jpg" class="attachment-post-thumbnail wp-post-image" alt="Unicorn Wallpaper" />										<p><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/05/title-with-special-characters/">Read More</a></p>
+									</div>
+									<h5><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/05/title-with-special-characters/">Markup: Title With Special Characters</a></h5>
+								</li>
+
+							</ul>
+
+
+							<ul>
+								<li>
+
+									<div class="ccr-thumbnail">
+										<img width="174" height="102" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2011/01/canola2-174x102.jpg" class="attachment-post-thumbnail wp-post-image" alt="canola" />										<p><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/05/markup-title-with-markup/">Read More</a></p>
+									</div>
+									<h5><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/05/markup-title-with-markup/">Markup: Title With Markup</a></h5>
+								</li>
+
+							</ul>
+
+
+							<ul>
+								<li>
+
+									<div class="ccr-thumbnail">
+										<img width="174" height="102" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2013/03/featured-image-vertical-174x102.jpg" class="attachment-post-thumbnail wp-post-image" alt="Horizontal Featured Image" />										<p><a href="http://demos.codexcoder.com/themes/dailynews/2012/03/15/template-featured-image-vertical/">Read More</a></p>
+									</div>
+									<h5><a href="http://demos.codexcoder.com/themes/dailynews/2012/03/15/template-featured-image-vertical/">Template: Featured Image (Vertical)</a></h5>
+								</li>
+
+							</ul>
+
+
+
+						</section> <!-- / #ccr-world-news -->
+						<section class="bottom-border"></section>
+
+
+
+						<section id="ccr-sports-gallery">
+							<div class="ccr-gallery-ttile">
+								<span></span> 
+								<p>Sports Gallery</p>
+							</div> <!-- .ccr-gallery-ttile -->
+
+
+
+
+
+							<ul>
+
+								<li>
+									<div class="ccr-thumbnail">
+										<img width="100" height="100" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2014/04/main-slide-3-150x150.jpg" class="attachment-170x100 wp-post-image" alt="main-slide-3" />								<p><a href="http://demos.codexcoder.com/themes/dailynews/2014/04/30/lorem-ipsum-dolor-sit-amet/">Read More</a></p>
+									</div>
+									<h5><a href="http://demos.codexcoder.com/themes/dailynews/2014/04/30/lorem-ipsum-dolor-sit-amet/">Lorem ipsum dolor sit amet</a></h5>
+								</li>
+
+
+								<li>
+									<div class="ccr-thumbnail">
+										<img width="100" height="100" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2013/03/soworthloving-wallpaper-150x150.jpg" class="attachment-170x100 wp-post-image" alt="I Am Worth Loving Wallpaper" />								<p><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/10/markup-image-alignment/">Read More</a></p>
+									</div>
+									<h5><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/10/markup-image-alignment/">Markup: Image Alignment</a></h5>
+								</li>
+
+
+								<li>
+									<div class="ccr-thumbnail">
+										<img width="100" height="100" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2011/01/dsc20050727_091048_222-150x150.jpg" class="attachment-170x100 wp-post-image" alt="dsc20050727_091048_222" />								<p><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/09/markup-text-alignment/">Read More</a></p>
+									</div>
+									<h5><a href="http://demos.codexcoder.com/themes/dailynews/2013/01/09/markup-text-alignment/">Markup: Text Alignment</a></h5>
+								</li>
+
+
+							</ul>					
+
+						</section> <!-- /#ccr-sports-gallery -->
+
+						<section class="bottom-border"></section>
+
+
+					</section><!-- /.col-md-8 / #ccr-left-section -->
+
+
+
+					<aside id="ccr-right-section" class="col-md-4 ccr-home">
+
+
+						<section class="siderbar-widget"><form role="search" method="get" id="searchform" class="searchform" action="http://demos.codexcoder.com/themes/dailynews/">
+							<div>
+								<label class="screen-reader-text" for="s">Search for:</label>
+								<input type="text" value="" name="s" id="s" />
+								<input type="submit" id="searchsubmit" value="Search" />
+							</div>
+						</form></section><section class="siderbar-widget">            
+							<section id="social-buttons">
+								<ul>
+									<li>
+										<a href="https://plus.google.com/104006364028285911315/posts" class="google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+									</li>
+									<li>
+										<a href="http://bd.linkedin.com/in/codexcoder" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+									</li>
+									<li>
+										<a href="http://twitter.com/codexcoder" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+									</li>
+									<li>
+										<a href="https://www.facebook.com/codexcoderltd" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+									</li>
+								</ul>                  
+							</section> 
+
+						</section><section class="siderbar-widget">        <section id="sidebar-older-post">
+							<div class="ccr-gallery-ttile"><span></span><p><strong>Recent Posts</strong></p></div>            <ul>
+
+								<li>
+									<img width="65" height="65" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2012/06/dsc20040724_152504_532-150x150.jpg" class="attachment-65x65 wp-post-image" alt="dsc20040724_152504_532" />
+									<h4><a href="http://demos.codexcoder.com/themes/dailynews/2012/01/07/template-sticky/">Template: Sticky</a></h4>
+
+									<div class="date-like-comment">
+
+										<span class="date">
+											<time datetime="2014-02-17">07 January, 2012</time>
+										</span>
+
+										<a class="comments" href="http://demos.codexcoder.com/themes/dailynews/2012/01/07/template-sticky/#comments"><i class="fa fa-comments-o"></i>0 Comments                        </a>
+									</div>
+								</li>
+
+
+								<li>
+									<img width="65" height="65" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2014/04/main-slide-4-150x150.jpg" class="attachment-65x65 wp-post-image" alt="main-slide-4" />
+									<h4><a href="http://demos.codexcoder.com/themes/dailynews/2014/04/30/consectetur-adipisicing-elit/">Consectetur adipisicing elit</a></h4>
+
+									<div class="date-like-comment">
+
+										<span class="date">
+											<time datetime="2014-02-17">30 April, 2014</time>
+										</span>
+
+										<a class="comments" href="http://demos.codexcoder.com/themes/dailynews/2014/04/30/consectetur-adipisicing-elit/#comments"><i class="fa fa-comments-o"></i>0 Comments                        </a>
+									</div>
+								</li>
+
+
+								<li>
+									<img width="65" height="65" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2014/04/main-slide-3-150x150.jpg" class="attachment-65x65 wp-post-image" alt="main-slide-3" />
+									<h4><a href="http://demos.codexcoder.com/themes/dailynews/2014/04/30/lorem-ipsum-dolor-sit-amet/">Lorem ipsum dolor sit amet</a></h4>
+
+									<div class="date-like-comment">
+
+										<span class="date">
+											<time datetime="2014-02-17">30 April, 2014</time>
+										</span>
+
+										<a class="comments" href="http://demos.codexcoder.com/themes/dailynews/2014/04/30/lorem-ipsum-dolor-sit-amet/#comments"><i class="fa fa-comments-o"></i>0 Comments                        </a>
+									</div>
+								</li>
+
+
+								<li>
+									<img width="65" height="65" src="http://demos.codexcoder.com/themes/dailynews/wp-content/uploads/sites/5/2014/04/main-slide-41-150x150.jpg" class="attachment-65x65 wp-post-image" alt="main-slide-4" />
+									<h4><a href="http://demos.codexcoder.com/themes/dailynews/2014/04/29/hello-world/">Hello world!</a></h4>
+
+									<div class="date-like-comment">
+
+										<span class="date">
+											<time datetime="2014-02-17">29 April, 2014</time>
+										</span>
+
+										<a class="comments" href="http://demos.codexcoder.com/themes/dailynews/2014/04/29/hello-world/#comments"><i class="fa fa-comments-o"></i>1 Comments                        </a>
+									</div>
+								</li>
+
+							</ul>
+						</section> <!-- /#sidebar-older-post -->
+
+					</section><section class="siderbar-widget"><div id="calendar_wrap"><table id="wp-calendar">
+						<caption>September 2017</caption>
+						<thead>
+							<tr>
+								<th scope="col" title="Monday">M</th>
+								<th scope="col" title="Tuesday">T</th>
+								<th scope="col" title="Wednesday">W</th>
+								<th scope="col" title="Thursday">T</th>
+								<th scope="col" title="Friday">F</th>
+								<th scope="col" title="Saturday">S</th>
+								<th scope="col" title="Sunday">S</th>
+							</tr>
+						</thead>
+
+						<tfoot>
+							<tr>
+								<td colspan="3" id="prev"><a href="http://demos.codexcoder.com/themes/dailynews/2014/04/">&laquo; Apr</a></td>
+								<td class="pad">&nbsp;</td>
+								<td colspan="3" id="next" class="pad">&nbsp;</td>
+							</tr>
+						</tfoot>
+
+						<tbody>
+							<tr>
+								<td colspan="4" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td>
+							</tr>
+							<tr>
+								<td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+							</tr>
+							<tr>
+								<td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td id="today">17</td>
+							</tr>
+							<tr>
+								<td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
+							</tr>
+							<tr>
+								<td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+								<td class="pad" colspan="1">&nbsp;</td>
+							</tr>
+						</tbody>
+					</table></div></section><section class="siderbar-widget"><div class="ccr-gallery-ttile"><span></span><p><strong>Tags</strong></p></div><div class="tagcloud"><a href='http://demos.codexcoder.com/themes/dailynews/tag/8bit/' class='tag-link-66' title='1 topic' style='font-size: 8pt;'>8BIT</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/alignment-2/' class='tag-link-67' title='3 topics' style='font-size: 12.516129032258pt;'>alignment</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/articles/' class='tag-link-68' title='1 topic' style='font-size: 8pt;'>Articles</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/aside/' class='tag-link-69' title='1 topic' style='font-size: 8pt;'>aside</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/audio/' class='tag-link-70' title='1 topic' style='font-size: 8pt;'>audio</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/captions-2/' class='tag-link-71' title='2 topics' style='font-size: 10.709677419355pt;'>captions</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/categories/' class='tag-link-72' title='2 topics' style='font-size: 10.709677419355pt;'>categories</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/chat/' class='tag-link-73' title='2 topics' style='font-size: 10.709677419355pt;'>chat</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/codex/' class='tag-link-77' title='3 topics' style='font-size: 12.516129032258pt;'>Codex</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/comments-2/' class='tag-link-78' title='4 topics' style='font-size: 14.021505376344pt;'>comments</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/content-2/' class='tag-link-79' title='12 topics' style='font-size: 20.193548387097pt;'>content</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/css/' class='tag-link-81' title='7 topics' style='font-size: 17.032258064516pt;'>css</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/dowork/' class='tag-link-85' title='1 topic' style='font-size: 8pt;'>dowork</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/edge-case/' class='tag-link-86' title='8 topics' style='font-size: 17.784946236559pt;'>edge case</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/embeds-2/' class='tag-link-87' title='4 topics' style='font-size: 14.021505376344pt;'>embeds</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/excerpt-2/' class='tag-link-91' title='3 topics' style='font-size: 12.516129032258pt;'>excerpt</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/fail/' class='tag-link-92' title='1 topic' style='font-size: 8pt;'>Fail</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/featured-image/' class='tag-link-93' title='3 topics' style='font-size: 12.516129032258pt;'>featured image</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/formatting-2/' class='tag-link-96' title='1 topic' style='font-size: 8pt;'>formatting</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/ftw/' class='tag-link-97' title='1 topic' style='font-size: 8pt;'>FTW</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/fun/' class='tag-link-98' title='1 topic' style='font-size: 8pt;'>Fun</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/gallery/' class='tag-link-99' title='3 topics' style='font-size: 12.516129032258pt;'>gallery</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/html/' class='tag-link-105' title='5 topics' style='font-size: 15.225806451613pt;'>html</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/image/' class='tag-link-106' title='7 topics' style='font-size: 17.032258064516pt;'>image</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/jetpack-2/' class='tag-link-109' title='3 topics' style='font-size: 12.516129032258pt;'>jetpack</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/layout/' class='tag-link-111' title='4 topics' style='font-size: 14.021505376344pt;'>layout</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/link/' class='tag-link-112' title='2 topics' style='font-size: 10.709677419355pt;'>link</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/lists-2/' class='tag-link-113' title='1 topic' style='font-size: 8pt;'>lists</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/love/' class='tag-link-115' title='1 topic' style='font-size: 8pt;'>Love</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/markup-2/' class='tag-link-116' title='6 topics' style='font-size: 16.279569892473pt;'>markup</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/media/' class='tag-link-117' title='1 topic' style='font-size: 8pt;'>media</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/mothership/' class='tag-link-122' title='1 topic' style='font-size: 8pt;'>Mothership</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/mustread/' class='tag-link-123' title='1 topic' style='font-size: 8pt;'>Must Read</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/nailedit/' class='tag-link-124' title='1 topic' style='font-size: 8pt;'>Nailed It</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/pagination/' class='tag-link-126' title='1 topic' style='font-size: 8pt;'>pagination</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/post-formats/' class='tag-link-38' title='16 topics' style='font-size: 22pt;'>Post Formats</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/quote/' class='tag-link-139' title='2 topics' style='font-size: 10.709677419355pt;'>quote</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/shortcode/' class='tag-link-145' title='6 topics' style='font-size: 16.279569892473pt;'>shortcode</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/standard-2/' class='tag-link-147' title='2 topics' style='font-size: 10.709677419355pt;'>standard</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/template/' class='tag-link-159' title='12 topics' style='font-size: 20.193548387097pt;'>template</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/title/' class='tag-link-164' title='5 topics' style='font-size: 15.225806451613pt;'>title</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/twitter-2/' class='tag-link-166' title='2 topics' style='font-size: 10.709677419355pt;'>twitter</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/video/' class='tag-link-169' title='3 topics' style='font-size: 12.516129032258pt;'>video</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/videopress/' class='tag-link-170' title='2 topics' style='font-size: 10.709677419355pt;'>videopress</a>
+						<a href='http://demos.codexcoder.com/themes/dailynews/tag/wordpress-tv/' class='tag-link-173' title='2 topics' style='font-size: 10.709677419355pt;'>wordpress.tv</a></div>
+					</section>
+
+
+				</aside><!-- / .col-md-4  / #ccr-right-section -->
+
+			</div><!-- /.container -->
+		</section><!-- / #ccr-main-section -->
+
+
+		<aside id="ccr-footer-sidebar">
+			<div class="container">
+
+				<ul>
+					<li class="col-md-3">
+						<ul id="meta-3" class="widget widget_meta"><li><h5>Meta</h5>			<ul>
+							<li><a href="http://demos.codexcoder.com/themes/dailynews/wp-login.php">Log in</a></li>
+							<li><a href="http://demos.codexcoder.com/themes/dailynews/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+							<li><a href="http://demos.codexcoder.com/themes/dailynews/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+							<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+						</li></ul>					
+					</li>
+					<li class="col-md-3">
+						<ul id="recent-comments-3" class="widget widget_recent_comments"><li><h5>Recent Comments</h5><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Anonymous</span> on <a href="http://demos.codexcoder.com/themes/dailynews/2014/04/29/hello-world/#comment-1">Hello world!</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://example.org/' rel='external nofollow' class='url'>John Doe</a></span> on <a href="http://demos.codexcoder.com/themes/dailynews/2009/08/06/edge-case-no-content/#comment-30">Edge Case: No Content</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://example.org/' rel='external nofollow' class='url'>Jane Doe</a></span> on <a href="http://demos.codexcoder.com/themes/dailynews/2012/01/04/template-password-protected/#comment-29">Protected: Template: Password Protected (the password is &#8220;enter&#8221;)</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://example.org/' rel='external nofollow' class='url'>Jane Doe</a></span> on <a href="http://demos.codexcoder.com/themes/dailynews/2012/01/03/template-comments/#comment-23">Template: Comments</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://example.org/' rel='external nofollow' class='url'>John Doe</a></span> on <a href="http://demos.codexcoder.com/themes/dailynews/2012/01/03/template-comments/#comment-22">Template: Comments</a></li></ul></li></ul>					
+					</li>
+
+					<li class="col-md-3">
+						<ul id="archives-3" class="widget widget_archive"><li><h5>Archives</h5>		<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
+							<option value="">Select Month</option>
+
+							<option value='http://demos.codexcoder.com/themes/dailynews/2014/04/'> April 2014 &nbsp;(3)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2013/01/'> January 2013 &nbsp;(5)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2012/03/'> March 2012 &nbsp;(5)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2012/01/'> January 2012 &nbsp;(6)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2011/03/'> March 2011 &nbsp;(1)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2010/10/'> October 2010 &nbsp;(1)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2010/09/'> September 2010 &nbsp;(2)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2010/08/'> August 2010 &nbsp;(3)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2010/07/'> July 2010 &nbsp;(1)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2010/06/'> June 2010 &nbsp;(3)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2010/05/'> May 2010 &nbsp;(1)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2010/04/'> April 2010 &nbsp;(1)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2010/03/'> March 2010 &nbsp;(1)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2010/02/'> February 2010 &nbsp;(1)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2010/01/'> January 2010 &nbsp;(1)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2009/10/'> October 2009 &nbsp;(1)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2009/09/'> September 2009 &nbsp;(1)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2009/08/'> August 2009 &nbsp;(1)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2009/07/'> July 2009 &nbsp;(1)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2009/06/'> June 2009 &nbsp;(1)</option>
+							<option value='http://demos.codexcoder.com/themes/dailynews/2009/05/'> May 2009 &nbsp;(1)</option>
+						</select>
+					</li></ul>				
+				</li>
+
+				<li class="col-md-3">
+					<ul id="recent-comments-4" class="widget widget_recent_comments"><li><h5>Recent Comments</h5><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Anonymous</span> on <a href="http://demos.codexcoder.com/themes/dailynews/2014/04/29/hello-world/#comment-1">Hello world!</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://example.org/' rel='external nofollow' class='url'>John Doe</a></span> on <a href="http://demos.codexcoder.com/themes/dailynews/2009/08/06/edge-case-no-content/#comment-30">Edge Case: No Content</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://example.org/' rel='external nofollow' class='url'>Jane Doe</a></span> on <a href="http://demos.codexcoder.com/themes/dailynews/2012/01/04/template-password-protected/#comment-29">Protected: Template: Password Protected (the password is &#8220;enter&#8221;)</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://example.org/' rel='external nofollow' class='url'>Jane Doe</a></span> on <a href="http://demos.codexcoder.com/themes/dailynews/2012/01/03/template-comments/#comment-23">Template: Comments</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://example.org/' rel='external nofollow' class='url'>John Doe</a></span> on <a href="http://demos.codexcoder.com/themes/dailynews/2012/01/03/template-comments/#comment-22">Template: Comments</a></li></ul></li></ul>					
+				</li>
+			</ul>
+		</div>
+
+	</aside> <!-- /#ccr-footer-sidebar -->
+
+
+	<footer id="ccr-footer">
+		<div class="container">
+			<div class="copyright">
+				© 2014 and All Rights Reserved by <a href="http://www.codexcoder.com">Premium WordPress Themes</a>.		</div> <!-- /.copyright -->
+
+				<div class="footer-social-icons">
+					<ul>
+						<li>
+							<a href="https://plus.google.com/+Codexcoder/posts" target="_blank" class="google-plus"><i class="fa fa-google-plus"></i></a>
+						</li>
+						<li >
+							<a href="https://www.facebook.com/codexcoderltd" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+						</li>
+						<li >
+							<a href="http://twitter.com/codexcoder" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+						</li>
+						<li >
+							<a href="http://bd.linkedin.com/in/codexcoder" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+						</li>
+					</ul>
+
+				</div><!--  /.cocial-icons -->
+
+			</div> <!-- /.container -->
+		</footer>  <!-- /#ccr-footer -->
+
+
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="http://demos.codexcoder.com/themes/dailynews/wp-content/themes/dailynews/js/bootstrap.min.js"></script>
+		<script src="http://demos.codexcoder.com/themes/dailynews/wp-content/themes/dailynews/js/jquery.newsTicker.js"></script>
+
+		<script type="text/javascript">
+			$('.newsticker').newsTicker({
+				row_height: 48,
+				max_rows: 2,
+				speed: 600,
+				direction: 'up',
+				duration: 4000,
+				autostart: 1,
+				pauseOnHover: 0
+			});
+		</script>
+		<script src="http://demos.codexcoder.com/themes/dailynews/wp-content/themes/dailynews/js/custom.js"></script>
+
+
+		<script type='text/javascript' src='http://demos.codexcoder.com/themes/dailynews/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+		<script type='text/javascript'>
+			/* <![CDATA[ */
+			var _wpcf7 = {"loaderUrl":"http:\/\/demos.codexcoder.com\/themes\/dailynews\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
+			/* ]]> */
+		</script>
+		<script type='text/javascript' src='http://demos.codexcoder.com/themes/dailynews/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.0.1'></script>
+	</body>
+	</html>
+
